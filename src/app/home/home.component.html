@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container">
+  <div class="header">
+    <h1>Blogs</h1>
+    <p>A subheading with a brief description of you, your work, and what you're all about—no biggie</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let blog of blogs">
+      <app-blog-card [imageUrl]="blog.imageUrl" [title]="blog.title" [description]="blog.description"></app-blog-card>
+    </div>
+  </div>
+</div>
+

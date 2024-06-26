@@ -1,0 +1,35 @@
+.item-card {
+    text-align: center;
+    margin: 10px;
+    width: 150px; /* Ajusta según el tamaño deseado */
+  }
+  
+  .image-container {
+    width: 100px; /* Ajusta según el tamaño deseado */
+    height: 100px; /* Ajusta según el tamaño deseado */
+    overflow: hidden;
+    border-radius: 10px; /* Si quieres bordes redondeados */
+    margin: 0 auto; /* Centra la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Fondo blanco */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  }
+  
+  .item-card h3 {
+    margin: 10px 0;
+    font-size: 1em; /* Ajusta según el tamaño deseado */
+  }
+  
+  .item-card p {
+    color: grey;
+    font-size: 0.8em; /* Ajusta según el tamaño deseado */
+  }
+  

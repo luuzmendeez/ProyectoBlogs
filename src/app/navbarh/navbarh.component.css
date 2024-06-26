@@ -1,0 +1,37 @@
+.navbar-nav .nav-link {
+    white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+    font-size: 16px; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+}
+
+/* Ajuste del nombre de la página */
+.navbar-brand {
+    font-size: 21px; 
+    font-weight: bold;
+}
+
+/* Ajuste de color y fuente del botón */
+.btn-outline-success {
+    color: #F07081; /* Color del texto del botón */
+    border-color: #F07081; /* Color del borde del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    font-family: 'Arial', sans-serif; /* Familia de la fuente del botón */
+}
+
+.btn-outline-success:hover {
+    background-color: #F07081; 
+    color: #fff; 
+    border-color: #F07081; 
+}
+
+/* Ajuste de color de la letra para enlaces activos y normales */
+.nav-link {
+    color: #333; /* Color del texto de los enlaces */
+    font-family: 'Arial', sans-serif; /* Familia de la fuente de los enlaces */
+}
+
+/* Texto que dice home*/
+.nav-link.active {
+    color: #F07081; 
+}

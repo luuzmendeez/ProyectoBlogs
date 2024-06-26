@@ -1,0 +1,19 @@
+.card {
+  margin: 15px;
+  border: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  text-align: left;
+}
+.blog-card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}

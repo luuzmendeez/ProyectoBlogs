@@ -1,0 +1,9 @@
+<h2>Videojuegos</h2>
+<div class="items-container">
+  <app-item-card *ngFor="let videojuego of videojuegos" [imageSrc]="videojuego.image" [title]="videojuego.name" [description]="videojuego.description"></app-item-card>
+  <div class="item-card add-new">
+    <button (click)="addVideojuego()">+</button>
+    <p>Nueva colección</p>
+  </div>
+</div>
+

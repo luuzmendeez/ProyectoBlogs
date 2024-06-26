@@ -1,0 +1,42 @@
+.navbar-nav .nav-link {
+  white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+  font-size: 16px; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+/* Ajuste del nombre de la página */
+.navbar-brand {
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+/* Ajuste de color y fuente del botón */
+.btn-outline-success {
+  color: #F07081; /* Color del texto del botón */
+  border-color: #F07081; /* Color del borde del botón */
+  font-size: 16px; /* Tamaño de la fuente del botón */
+  font-family: 'Arial', sans-serif; /* Familia de la fuente del botón */
+}
+
+.btn-outline-success:hover {
+  background-color: #F07081; /* Color de fondo al pasar el ratón sobre el botón */
+  color: #fff; /* Color del texto al pasar el ratón sobre el botón */
+  border-color: #F07081; /* Color del borde al pasar el ratón sobre el botón */
+}
+
+/* Ajuste de color de la letra para enlaces activos y normales */
+.nav-link {
+  color: #333; /* Color del texto de los enlaces */
+  font-family: 'Arial', sans-serif; /* Familia de la fuente de los enlaces */
+}
+/* Texto que dice home*/
+.nav-link.active {
+  color: #F07081; 
+}
+
+/* Asegura que el menú desplegable tenga el estilo adecuado */
+.dropdown-menu .dropdown-item {
+  font-size: 16px; /* Tamaño de fuente para los elementos del menú desplegable */
+  color: #333; /* Color del texto para los elementos del menú desplegable */
+}

@@ -1,0 +1,9 @@
+<h2>Notas</h2>
+<div class="items-container">
+  <app-item-card *ngFor="let nota of notas" [imageSrc]="nota.image" [title]="nota.name" [description]="nota.description"></app-item-card>
+  <div class="item-card add-new">
+    <button (click)="addNota()">+</button>
+    <p>Nueva nota</p>
+  </div>
+</div>
+
