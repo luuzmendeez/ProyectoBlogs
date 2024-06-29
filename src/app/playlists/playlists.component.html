@@ -1,10 +1,64 @@
-<h1>Playlists</h1>
+<!-- <h1>Playlists</h1>
 <div class="items-container">
   <app-item-card *ngFor="let playlist of playlists" [imageSrc]="playlist.image" [title]="playlist.name" [description]="playlist.description"></app-item-card>
-  <div class="item-card add-new">
-    <button (click)="addPlaylist()">+</button>
+  <div class="item-card add-new" (click)="showAddPlaylistForm = true">
+    <button>+</button>
+    <p>Crear playlist</p>
+  </div>
+</div> -->
+
+<!-- Formulario para agregar una nueva playlist -->
+<!-- <div *ngIf="showAddPlaylistForm" class="add-playlist-form">
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" [(ngModel)]="newPlaylist.name" name="name" required>
+
+    <label for="description">Descripción</label>
+    <textarea id="description" [(ngModel)]="newPlaylist.description" name="description" required></textarea>
+
+    <label for="image">Imagen</label>
+    <input type="file" id="image" (change)="onImageSelected($event)">
+
+    <div class="form-buttons">
+      <button type="submit" class="btn-primary">Agregar Playlist</button>
+      <button type="button" class="cancel-button" (click)="showAddPlaylistForm = false">Cancelar</button>
+    </div>
+  </form>
+</div> -->
+
+<h1>Playlists</h1>
+<div class="items-container">
+  <app-item-card *ngFor="let playlist of playlists" 
+                 [imageSrc]="playlist.image" 
+                 [title]="playlist.name" 
+                 [description]="playlist.description" 
+                 (itemClicked)="selectPlaylist(playlist)"></app-item-card>
+  <div class="item-card add-new" (click)="showAddPlaylistForm = true">
+    <button>+</button>
     <p>Crear playlist</p>
   </div>
 </div>
+
+<!-- Formulario para agregar una nueva playlist -->
+<div *ngIf="showAddPlaylistForm" class="add-playlist-form">
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" [(ngModel)]="newPlaylist.name" name="name" required>
+
+    <label for="description">Descripción</label>
+    <textarea id="description" [(ngModel)]="newPlaylist.description" name="description" required></textarea>
+
+    <label for="image">Imagen</label>
+    <input type="file" id="image" (change)="onImageSelected($event)">
+
+    <div class="form-buttons">
+      <button type="submit" class="btn-primary">Agregar Playlist</button>
+      <button type="button" class="cancel-button" (click)="showAddPlaylistForm = false">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+<!-- Modal de detalle de la playlist -->
+<app-playlist-detail *ngIf="selectedPlaylist" [playlist]="selectedPlaylist"></app-playlist-detail>
 
 

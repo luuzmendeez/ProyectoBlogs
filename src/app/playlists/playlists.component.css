@@ -2,20 +2,84 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.item-card.add-new {
+  }
+  
+  .item-card.add-new {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px dashed #ccc;
     padding: 20px;
-}
-
-.item-card.add-new button {
+    cursor: pointer;
+  }
+  
+  .item-card.add-new button {
     font-size: 2em;
     background: none;
     border: none;
     cursor: pointer;
-}
+  }
+  
+  .add-playlist-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+  
+  .add-playlist-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-playlist-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .add-playlist-form input[type="text"],
+  .add-playlist-form textarea,
+  .add-playlist-form input[type="file"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  
+  .add-playlist-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-playlist-form .submit-button,
+  .add-playlist-form .cancel-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .add-playlist-form .cancel-button {
+    background-color: #f44336;
+  }
+  
+  .add-playlist-form .submit-button:hover,
+  .add-playlist-form .cancel-button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-playlist-form .cancel-button:hover {
+    background-color: #e53935;
+  }
+  .btn-primary {
+    width: 50%;
+  }

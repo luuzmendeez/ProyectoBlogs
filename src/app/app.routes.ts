@@ -1,5 +1,6 @@
 // import { CrearCuentaComponent } from './crear-cuenta/crear-cuenta.component';
 import { Routes } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { NavbarhComponent } from './navbarh/navbarh.component';
 import { LandingComponent } from './landing/landing.component';
@@ -12,6 +13,8 @@ import { PlaylistsComponent } from './playlists/playlists.component';
 import { VideojuegosComponent } from './videojuegos/videojuegos.component';
 import { NotasComponent } from './notas/notas.component';
 import { ItemCardComponent } from './shared/item-card/item-card.component';
+import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
+
 
 export const routes: Routes = [
     {path: 'header', component: HeaderComponent},
@@ -22,11 +25,13 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'crear-cuenta', component: CrearCuentaComponent},
     {path: 'boton', component: BotonComponent},
-    { path: 'playlists', component: PlaylistsComponent },
+    { path: 'playlists', component: PlaylistsComponent, providers: [provideHttpClient()] },
     { path: 'videojuegos', component: VideojuegosComponent },
     { path: 'notas', component: NotasComponent },
     { path: '**', redirectTo: 'playlists' },
     { path: 'item', component: ItemCardComponent },
+    { path: '', component: PlaylistsComponent },
+    { path: 'playlist/:id', component: PlaylistDetailComponent }
 ];
 
 export const AppRoutes = routes;

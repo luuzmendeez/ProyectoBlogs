@@ -1,0 +1,25 @@
+<div class="modal" *ngIf="playlist">
+    <div class="modal-content">
+      <span class="close" (click)="playlist = null">&times;</span>
+      <h2>{{ playlist.name }}</h2>
+      <img [src]="playlist.image" alt="{{ playlist.name }}" class="playlist-image">
+      <p>{{ playlist.description }}</p>
+      
+      <div class="search-section">
+        <label for="search">Buscar Canciones en Spotify</label>
+        <input type="text" id="search" [(ngModel)]="searchQuery" (input)="searchSongs()" placeholder="Busca una canción">
+      </div>
+  
+      <div *ngIf="searchResults.length > 0" class="search-results">
+        <h3>Resultados de la búsqueda:</h3>
+        <ul>
+          <li *ngFor="let song of searchResults">
+            <img [src]="song.album.images[0].url" alt="{{ song.name }}" class="song-image">
+            <span>{{ song.name }} - {{ song.artists[0].name }}</span>
+            <button (click)="addSongToPlaylist(song)">Agregar</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

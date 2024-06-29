@@ -13,6 +13,7 @@ import { PlaylistsComponent } from './playlists/playlists.component';
 import { VideojuegosComponent } from './videojuegos/videojuegos.component';
 import { NotasComponent } from './notas/notas.component';
 import { ItemCardComponent } from './shared/item-card/item-card.component';
+import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
 
 
 @Component({
@@ -21,7 +22,7 @@ import { ItemCardComponent } from './shared/item-card/item-card.component';
   imports: [RouterOutlet, HeaderComponent, NavbarhComponent, LandingComponent,
             HomeComponent, BlogCardComponent, LoginComponent, CrearCuentaComponent,
           BotonComponent, PlaylistsComponent, VideojuegosComponent, NotasComponent, 
-          ItemCardComponent, ],
+          ItemCardComponent,PlaylistDetailComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
