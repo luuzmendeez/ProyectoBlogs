@@ -1,3 +1,4 @@
+//app.components.ts
 // import { CrearCuentaComponent } from './crear-cuenta/crear-cuenta.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -9,11 +10,10 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { LoginComponent } from './auth/login/login.component';
 import { CrearCuentaComponent } from './auth/crear-cuenta/crear-cuenta.component';
 import { BotonComponent } from './boton/boton.component';
-import { PlaylistsComponent } from './playlists/playlists.component';
 import { VideojuegosComponent } from './videojuegos/videojuegos.component';
 import { NotasComponent } from './notas/notas.component';
 import { ItemCardComponent } from './shared/item-card/item-card.component';
-import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -21,8 +21,8 @@ import { PlaylistDetailComponent } from './playlist-detail/playlist-detail.compo
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, NavbarhComponent, LandingComponent,
             HomeComponent, BlogCardComponent, LoginComponent, CrearCuentaComponent,
-          BotonComponent, PlaylistsComponent, VideojuegosComponent, NotasComponent, 
-          ItemCardComponent,PlaylistDetailComponent],
+          BotonComponent,  VideojuegosComponent, NotasComponent, 
+          ItemCardComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
