@@ -1,0 +1,30 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .add-blog-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .add-blog-button button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: green; /* Cambia el color según tus preferencias */
+  }
+  
+  .add-blog-button p {
+    margin-left: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  

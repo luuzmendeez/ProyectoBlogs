@@ -67,11 +67,14 @@ import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing/landing.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,RouterOutlet, LandingComponent, RouterModule],
+  imports: [CommonModule,RouterOutlet, LandingComponent, RouterModule,
+    BlogCardComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

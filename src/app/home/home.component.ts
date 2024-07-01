@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { BlogCardComponent } from '../blog-card/blog-card.component';
+import { CrearBlogComponent } from '../crear-blog/crear-blog.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, BlogCardComponent, CommonModule],
+  imports: [HeaderComponent, BlogCardComponent, CommonModule, CrearBlogComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
