@@ -1,3 +1,4 @@
+// landing.component.ts
 import { Component } from '@angular/core';
 import { NavbarhComponent } from '../navbarh/navbarh.component';
 import { BotonComponent } from '../boton/boton.component';

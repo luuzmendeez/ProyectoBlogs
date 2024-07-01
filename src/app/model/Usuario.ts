@@ -1,3 +1,4 @@
+//Usuario.ts
 import { Blog } from './Blog';
 export class Usuario {
     idUsuario!: number;

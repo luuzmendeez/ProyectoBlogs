@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  constructor() {
+    console.log('LoginComponent loaded');
+  }
   // correo: string = '';
   // password: string = '';
 
