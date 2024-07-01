@@ -1,0 +1,8 @@
+<h2>Playlists</h2>
+<div class="items-container">
+  <app-item-card *ngFor="let playlist of playlists" [imageSrc]="playlist.image" [title]="playlist.name" [description]="playlist.description"></app-item-card>
+  <div class="item-card add-new">
+    <button (click)="addPlaylist()">+</button>
+    <p>Crear playlist</p>
+  </div>
+</div>

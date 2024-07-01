@@ -68,12 +68,13 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing/landing.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import { BlogDetalladoComponent } from './blog-detallado/blog-detallado.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule,RouterOutlet, LandingComponent, RouterModule,
-    BlogCardComponent
+    BlogCardComponent, BlogDetalladoComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
